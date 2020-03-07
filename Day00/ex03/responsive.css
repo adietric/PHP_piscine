@@ -1,0 +1,102 @@
+*	{
+	box-sizing: border-box;
+	margin: 0;
+}
+#all
+{
+	background-color: black;
+}
+.tab	{
+	position: fixed;
+	background-color: white;
+	border: solid;
+	border-width: 0.2vmin;
+	margin-left: 15vmin;
+	margin-right: 50vmin;
+	margin-top: 10vmin;
+	border-color: black;
+	border-radius: 10px;
+	padding: 1vmin;
+	height: auto;
+	width:  auto;
+}
+#titre	{
+	text-align: center;
+	font-size: 5vmin;
+}
+.line	{
+	display: grid;
+	grid-template-columns: repeat(18,5vmin);
+	grid-template-rows: repeat(9);
+	grid-gap: 1vmin;
+	margin-right: 2vmin;
+	margin-left: 2vmin;
+}
+.elem	{
+	border:solid;
+	border-width: 1px;
+	margin-top: 1vmin;
+	background-color: white;
+}
+.r_1		{
+	grid-column: 2/18;
+	background-color: white;
+}
+.r_2		{
+	grid-column: 3/13;
+	background-color: white;
+}
+.name_e	{
+	font-size: 2vmin;
+	text-align: center;
+	font-weight: bold;
+}
+.weigth_e	{
+	font-size: 0.8vmin;
+	margin-right: 0.1vmin;
+	text-align: right;
+}
+.number_e	{
+	font-size: 0.8vmin;
+	margin-left: 0.1vmin;
+	text-align: left;
+}
+.blue	{
+	background-color: rgba(0, 0, 255, 0.671);
+}
+.blue_p	{
+	background-color: rgb(0, 162, 255);
+}
+.grey	{
+	background-color: rgb(48, 136, 187);
+}
+.pink	{
+	background-color: rgb(241, 110, 186);
+}
+.red	{
+	background-color: rgb(219, 49, 49);
+}
+.green	{
+	background-color: rgb(17, 209, 17);
+}
+.green_p	{
+	background-color: rgb(34, 116, 28);
+}
+.purple	{
+	background-color: rgb(173, 13, 173);
+}
+.yellow	{
+	background-color: rgb(238, 223, 12);
+}
+.orange	{
+	background-color: rgb(238, 157, 8);
+}
+.picture	{
+	position: fixed;
+	height: 50vmin;
+	width: 50vmin;
+	margin-top: 70vmin;
+	margin-left: 50vmin;
+	margin-right: 50vmin;
+	margin-bottom: 70vmin;
+}

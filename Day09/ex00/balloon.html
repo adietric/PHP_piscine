@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        #this {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="this" onmouseout="OnScripts();" onclick="ClickScripts();"></div>
+    <script>
+        function ClickScripts() {
+            var elem = document.getElementById("this");
+            var background_css = window.getComputedStyle(elem, null).getPropertyValue("background-color");
+            var width_css = parseInt(window.getComputedStyle(elem, null).getPropertyValue("width"));
+            var height_css = parseInt(window.getComputedStyle(elem, null).getPropertyValue("height"));
+
+            if (background_css == "rgb(255, 0, 0)")
+                elem.style.backgroundColor = "green";
+            else if (background_css == "rgb(0, 128, 0)")
+                elem.style.backgroundColor = "blue";
+            else if (background_css == "rgb(0, 0, 255)")
+                elem.style.backgroundColor = "red";
+            if (width_css <= 410 && height_css <= 410) {
+                elem.style.width = width_css + 10 + "px";
+                elem.style.height = height_css + 10 + "px";
+            } else {
+                elem.style.width = "200px";
+                elem.style.height = "200px";
+            }
+        }
+
+        function OnScripts() {
+            var elem = document.getElementById("this");
+            if (elem.style.backgroundColor == "red" || elem.style.backgroundColor == "")
+                elem.style.backgroundColor = "blue";
+            else if (elem.style.backgroundColor == "blue")
+                elem.style.backgroundColor = "green";
+            else if (elem.style.backgroundColor == "green")
+                elem.style.backgroundColor = "red";
+            if (parseInt(elem.style.width) >= 205 && parseInt(elem.style.height) >= 205) {
+                elem.style.height = parseInt(elem.style.height) - 5 + "px";
+                elem.style.width = parseInt(elem.style.width) - 5 + "px";
+            }
+        }
+    </script>
+</body>
+
+</html>

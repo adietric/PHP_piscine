@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+</head>
+
+<body>
+    <div style="width:200px;height:200px;background:red;border-radius:50%;margin-left:300px;margin-top:300px;" id="balloon">
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#balloon').click(function() {
+                var h = parseInt($('#balloon').prop('style').height);
+                var w = parseInt($('#balloon').prop('style').width);
+                if (w < 420) {
+                    w += 10;
+                    h += 10;
+                    window.color++;
+                } else {
+                    h = 200;
+                    w = 200;
+                    window.color = 0;
+                }
+                $('#balloon').prop('style').height = h + "px";
+                $('#balloon').prop('style').width = w + "px";
+                $('#balloon').prop('style').background = window.color_tab[window.color % 3];
+            });
+            $('#balloon').mouseleave(function() {
+                var h = parseInt($('#balloon').prop('style').height);
+                var w = parseInt($('#balloon').prop('style').width);
+                if (w > 200) {
+                    w -= 5;
+                    h -= 5;
+                }
+                window.color--;
+                if (window.color < 0)
+                    window.color = 30;
+                $('#balloon').prop('style').height = h + "px";
+                $('#balloon').prop('style').width = w + "px";
+                $('#balloon').prop('style').background = window.color_tab[window.color % 3];
+            });
+        });
+        var color = 0;
+        var color_tab = new Array('red', 'green', 'blue');
+    </script>
+</body>
+
+</html>

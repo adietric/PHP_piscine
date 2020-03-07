@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+</head>
+
+<body>
+    <form name="calc" action="" method="post">
+        <input type="text" name="left" />
+        <select name="operand">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+			<option value="%">%</option>
+		</select>
+        <input type="text" name="right">
+        <input type="submit" name="submit" value="Try me!">
+    </form>
+    <script type="text/javascript">
+        $("form").submit(function() {
+            var operand = $("select").val();
+            var left = Number($("input[name=left]").val());
+            var right = Number($("input[name=right]").val());
+            if (Number.isInteger(left) === false || Number.isInteger(right) === false || left < 0 || right < 0 || !$("input[name=left]").val() || !$("input[name=right]").val())
+                alert("Error :(");
+            else {
+                if (operand == "+") {
+                    alert(left + right);
+                    console.log(left + right);
+                } else if (operand == "-") {
+                    alert(left - right);
+                    console.log(left - right);
+                } else if (operand == "*") {
+                    alert(left * right);
+                    console.log(left * right);
+                } else if (operand == "/") {
+                    alert(right == 0 ? "It's over 9000" : left / right);
+                    console.log(right == 0 ? "It's over 9000" : left / right);
+                } else if (operand == "%") {
+                    alert(right == 0 ? "It's over 9000" : left % right);
+                    console.log(right == 0 ? "It's over 9000" : left % right);
+                }
+            }
+        });
+        setInterval(function() {
+            alert("Please, use me...");
+        }, 30000);
+    </script>
+</body>
+
+</html>

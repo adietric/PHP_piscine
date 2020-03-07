@@ -1,0 +1,220 @@
+#bg	{
+	background-color:#505050;
+}
+
+h1	{
+	background-color: #909090;
+	margin-top: 0.95vw;
+	height: 7.3vw;
+	margin-left: 12.4vw;
+	margin-right: 12.4vw;
+	border-radius: 20px;
+}
+
+.shadow	{
+	box-shadow: 22px 22px 15px 5px rgba(0,0,0,0.75);
+	background-color: #909090;
+
+}
+.green	{
+	box-shadow: 22px 22px 15px 5px rgba(0,0,0,0.75);
+	background-color: #88ff89
+}
+
+.line	{
+	display: grid;
+	grid-template-columns: repeat(3,1);
+	margin-top: 1vw;
+	background-color: antiquewhite;
+}
+.un		{
+	position: fixed;
+	border-radius: 10px;
+	height: 22.5vw;
+	width: 7.5%;
+	margin-left: 14%;
+}
+.deux		{
+	position: fixed;
+	border-radius: 10px;
+	height: 30.9vw;
+	width: 54%;
+	margin-left: 23%;
+}
+.trois		{
+	position: fixed;
+	border-radius: 10px;
+	height: 22.5vw;
+	width: 7.5%;
+	margin-left: 78.5%;
+}
+.quatre		{
+	position: relative;
+	border-radius: 10px;
+	height: 9vw;
+	width: 27.5%;
+	margin-left: 10%;
+	margin-top: 27.7vw;
+}
+.p_42	{
+	margin-top: 0.58vw;
+	margin-left: 1%;
+	height: 6.2vw;
+	width: 31.7%;
+}
+.p_l	{
+	position: fixed;
+	width: 13.55%;
+	height: 7.67vw;
+	margin-top: 0.7%;
+	margin-left: 35%;
+
+}
+.p_reload	{
+	position: fixed;
+	margin-top: 0.5%;
+	margin-left: 48.5%;
+	height: 1.3vw;
+}
+.p_close	{
+	position: fixed;
+	margin-top: 5.8%;
+	margin-left: 48.7%;
+	height: 1.1vw;
+}
+.p_arrow	{
+	position: fixed;
+	margin-left: 1.85%;
+	margin-top:	0.95vw;
+	height: 3.9vw;
+}
+.p_hand		{
+	position: fixed;
+	margin-left: 1.6%;
+	margin-top:	5.2vw;
+	height: 3.85vw;
+}
+.p_eye		{
+	position: fixed;
+	margin-left: 1.75%;
+	margin-top:	9.7vw;
+	width: 4%;
+}
+.p_outil	{
+	position: fixed;
+	margin-left: 1.65%;
+	margin-top:	13.8vw;
+	width: 3.6%;
+
+}
+.p_chat		{
+	position: fixed;
+	margin-left: 1.65%;
+	margin-top:	17.5vw;
+	width: 3.6%;
+
+}
+.cadre	{
+	position: fixed;
+	border: solid;
+	color:red;
+	margin-left: 1.48%;
+	margin-top: 9.4vw;
+	height: 3.65vw;
+	width: 4%;
+	border-radius: 10px;
+	border-width: 8.5px;
+}
+
+.p_cluster	{
+	position: fixed;
+	margin-left: 0.529%;
+	margin-top: 0.634%;
+	width: 52.91%;
+}
+.p_book	{
+
+	position: fixed;
+	width: 3.9%;
+	height: 5.3vw;
+	margin-top: 0.899%;
+	margin-left: 1.8%;
+}
+.p_towel	{
+
+	position: fixed;
+	width: 3.6%;
+	margin-top: 6.5%;
+	margin-left: 1.8%;
+}
+
+.brick	{
+	border:solid;
+	margin-left: 6.8%;
+	margin-top: 9.41vw;
+	border-width: 0px;
+	width: 83.9%;
+	height: 16.5%;
+	background-image: url(./resources/brick.jpg);
+	background-repeat: repeat;
+	background-size: 26.5% 47%;
+}
+
+.text	{
+	position: fixed;
+	margin-left: 0.5%;
+	margin-top: 0.59%;
+	font-size: 0.95vw;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	letter-spacing: -0.02vw;
+	color: rgb(32, 30, 30);
+
+}
+.big	{
+	font-size: 2.2vw;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	letter-spacing: 0.05vw;
+	color: rgb(39, 35, 35);
+}
+.italic	{
+	font-style: italic;
+}
+.shad	{
+	text-shadow: 8px 8px 6px #ff0000;
+}
+.form	{
+	margin-left: 0.6vw;
+	width: 75%;
+	height: 0.8vw;
+	margin-top: 5vw;
+	border-width: 4px;
+}
+.rep	{
+	position: fixed;
+	margin-top: 5vw;
+	margin-left: 0.4vw;
+	border-width: 2.4px;
+	border-color: rgb(228, 217, 217);
+	background-color: rgb(223, 215, 215);
+	border-radius: 4px;
+	width: 4vw;
+	height: 1.1vw;
+	font-size: 20px;
+	letter-spacing: 0.03vw;
+}
+.chaise	{
+	position: fixed;
+	z-index: 1;
+	margin-left: 17.8%;
+	margin-top: 17.8vw;
+	width: 7vw;
+	height: 12vw;
+}
+.mac	{
+	position: fixed;
+	z-index: 1;
+	margin-left: 42.2%;
+	margin-top: 17.5vw;
+	width: 10vw;
+	height: 6.6vw;
+}

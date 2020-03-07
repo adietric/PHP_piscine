@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Mendeleiev</title>
+
+	<style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+		}
+
+		#all {
+			background-color: black;
+		}
+
+		.tab {
+			background-color: white;
+			border: solid;
+			border-width: 2px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 100px;
+			border-color: black;
+			border-radius: 10px;
+			padding: 10px;
+			width: 90%;
+		}
+
+		#titre {
+			text-align: center;
+		}
+
+		.line {
+			display: grid;
+			grid-template-columns: repeat(18, 1fr);
+			grid-template-rows: repeat(9, 1);
+			grid-gap: 10px;
+		}
+
+		.elem {
+			border: solid;
+			border-width: 1px;
+			margin-top: 5px;
+			background-color: white;
+		}
+
+		.r_1 {
+			grid-column: 2/18;
+			background-color: white;
+		}
+
+		.r_2 {
+			grid-column: 3/13;
+			background-color: white;
+		}
+
+		.name_e {
+			font-size: 160%;
+			text-align: center;
+			font-weight: bold;
+		}
+
+		.weigth_e {
+			text-align: right;
+			margin-right: 2px;
+		}
+
+		.number_e {
+			text-align: left;
+			margin-left: 2px;
+		}
+
+		.blue {
+			background-color: rgba(0, 0, 255, 0.671);
+		}
+
+		.blue_p {
+			background-color: rgb(0, 162, 255);
+		}
+
+		.grey {
+			background-color: rgb(48, 136, 187);
+		}
+
+		.pink {
+			background-color: rgb(241, 110, 186);
+		}
+
+		.red {
+			background-color: rgb(219, 49, 49);
+		}
+
+		.green {
+			background-color: rgb(17, 209, 17);
+		}
+
+		.green_p {
+			background-color: rgb(34, 116, 28);
+		}
+
+		.purple {
+			background-color: rgb(173, 13, 173);
+		}
+
+		.yellow {
+			background-color: rgb(238, 223, 12);
+		}
+
+		.orange {
+			background-color: rgb(238, 157, 8);
+		}
+
+		.picture {
+			height: 550px;
+			width: 550px;
+			margin-left: 40%;
+		}
+	</style>
+</head>
+
+<body id="all">
+	<div">
+		<div class="tab">
+			<h1 id="titre">Mendeleiev's periodic table of elements</h1>
+			<div class="line">
+				<div class="elem yellow">
+					<p class="weigth_e">1,0079</p>
+					<p class="name_e">H</p>
+					<p class="number_e">1</p>
+				</div>
+				<div class="r_1"></div>
+				<div class="elem blue_p">
+					<p class="weigth_e">4,0026</p>
+					<p class="name_e">He</p>
+					<p class="number_e">2</p>
+				</div>
+			</div>
+
+			<div class="line">
+				<div class="elem blue">
+					<p class="weigth_e">6,941</p>
+					<p class="name_e">Li</p>
+					<p class="number_e">3</p>
+				</div>
+				<div class="elem pink">
+					<p class="weigth_e">9,0122</p>
+					<p class="name_e">Be</p>
+					<p class="number_e">4</p>
+				</div>
+				<div class="r_2"></div>
+				<div class="elem green">
+					<p class="weigth_e">10,811</p>
+					<p class="name_e">B</p>
+					<p class="number_e">5</p>
+				</div>
+				<div class="elem yellow">
+					<p class="weigth_e">12,0107</p>
+					<p class="name_e">C</p>
+					<p class="number_e">6</p>
+				</div>
+				<div class="elem yellow">
+					<p class="weigth_e">14,0067</p>
+					<p class="name_e">N</p>
+					<p class="number_e">7</p>
+				</div>
+				<div class="elem yellow">
+					<p class="weigth_e">15,9994</p>
+					<p class="name_e">O</p>
+					<p class="number_e">8</p>
+				</div>
+				<div class="elem purple">
+					<p class="weigth_e">18,9984</p>
+					<p class="name_e">F</p>
+					<p class="number_e">9</p>
+				</div>
+				<div class="elem blue_p">
+					<p class="weigth_e">20,1797</p>
+					<p class="name_e">Ne</p>
+					<p class="number_e">10</p>
+				</div>
+			</div>
+
+			<div class="line">
+				<div class="elem blue">
+					<p class="weigth_e">22,9897</p>
+					<p class="name_e">Na</p>
+					<p class="number_e">11</p>
+				</div>
+				<div class="elem pink">
+					<p class="weigth_e">24,305</p>
+					<p class="name_e">Mg</p>
+					<p class="number_e">12</p>
+				</div>
+				<div class="r_2"></div>
+				<div class="elem orange">
+					<p class="weigth_e">26,9815</p>
+					<p class="name_e">Al</p>
+					<p class="number_e">13</p>
+				</div>
+				<div class="elem green">
+					<p class="weigth_e">28,0855</p>
+					<p class="name_e">Si</p><p class="number_e">14</p>
+				</div>
+				<div class="elem yellow">
+					<p class="weigth_e">30,9738</p>
+					<p class="name_e">P</p>
+					<p class="number_e">15</p>
+				</div>
+				<div class="elem yellow">
+					<p class="weigth_e">32,065</p>
+					<p class="name_e">S</p>
+					<p class="number_e">16</p>
+				</div>
+				<div class="elem purple">
+					<p class="weigth_e">35,453</p>
+					<p class="name_e">Cl</p><p class="number_e">17</p>
+				</div>
+				<div class="elem blue_p">
+					<p class="weigth_e">39,948</p>
+					<p class="name_e">Ar</p><p class="number_e">18</p>
+				</div>
+			</div>
+
+			<div class="line">
+				<div class="elem blue">
+					<p class="weigth_e">39,0983</p>
+					<p class="name_e">K</p>
+					<p class="number_e">19</p>
+				</div>
+				<div class="elem pink">
+					<p class="weigth_e">40,078</p>
+					<p class="name_e">Ca</p>
+					<p class="number_e">20</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">44,9559</p>
+					<p class="name_e">Sc</p>
+					<p class="number_e">21</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">47,867</p>
+					<p class="name_e">Ti</p>
+					<p class="number_e">22</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">50,9415</p>
+					<p class="name_e">V</p>
+					<p class="number_e">23</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">51,9961</p>
+					<p class="name_e">Cr</p>
+					<p class="number_e">24</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">54,938</p>
+					<p class="name_e">Mn</p>
+					<p class="number_e">25</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">55,845</p>
+					<p class="name_e">Fe</p>
+					<p class="number_e">26</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">58,9332</p>
+					<p class="name_e">Co</p>
+					<p class="number_e">27</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">58,6934</p>
+					<p class="name_e">Ni</p>
+					<p class="number_e">28</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">63,546</p>
+					<p class="name_e">Cu</p>
+					<p class="number_e">29</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">65,39</p>
+					<p class="name_e">Zn</p>
+					<p class="number_e">30</p>
+				</div>
+				<div class="elem orange">
+					<p class="weigth_e">69,723</p>
+					<p class="name_e">Ga</p>
+					<p class="number_e">31</p>
+				</div>
+				<div class="elem green">
+					<p class="weigth_e">72,64</p>
+					<p class="name_e">Ge</p>
+					<p class="number_e">32</p>
+				</div>
+				<div class="elem green">
+					<p class="weigth_e">74,9216</p>
+					<p class="name_e">As</p>
+					<p class="number_e">33</p>
+				</div>
+				<div class="elem yellow">
+					<p class="weigth_e">78,96</p>
+					<p class="name_e">Se</p>
+					<p class="number_e">34</p>
+				</div>
+				<div class="elem purple">
+					<p class="weigth_e">79,904</p>
+					<p class="name_e">Br</p>
+					<p class="number_e">35</p>
+				</div>
+				<div class="elem blue_p">
+					<p class="weigth_e">83,8</p>
+					<p class="name_e">Kr</p>
+					<p class="number_e">36</p>
+				</div>
+			</div>
+
+			<div class="line">
+				<div class="elem blue">
+					<p class="weigth_e">85,4678</p>
+					<p class="name_e">Rb</p>
+					<p class="number_e">37</p>
+				</div>
+				<div class="elem pink">
+					<p class="weigth_e">87,62</p>
+					<p class="name_e">Sr</p>
+					<p class="number_e">38</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">88,9059</p>
+					<p class="name_e">Y</p>
+					<p class="number_e">39</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">91,224</p>
+					<p class="name_e">Zr</p>
+					<p class="number_e">40</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">92,9064</p>
+					<p class="name_e">Nb</p>
+					<p class="number_e">41</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">95,94</p>
+					<p class="name_e">Mo</p>
+					<p class="number_e">42</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">98</p>
+					<p class="name_e">Te</p>
+					<p class="number_e">43</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">101,07</p>
+					<p class="name_e">Ru</p>
+					<p class="number_e">44</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">102,9055</p>
+					<p class="name_e">Rh</p>
+					<p class="number_e">45</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">106,42</p>
+					<p class="name_e">Pd</p>
+					<p class="number_e">46</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">107,8682</p>
+					<p class="name_e">Ag</p>
+					<p class="number_e">47</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">112,411</p>
+					<p class="name_e">Cd</p>
+					<p class="number_e">48</p>
+				</div>
+				<div class="elem orange">
+					<p class="weigth_e">114,818</p>
+					<p class="name_e">In</p>
+					<p class="number_e">49</p>
+				</div>
+				<div class="elem orange">
+					<p class="weigth_e">118,71</p>
+					<p class="name_e">Sn</p>
+					<p class="number_e">50</p>
+				</div>
+				<div class="elem green">
+					<p class="weigth_e">121,76</p>
+					<p class="name_e">Sb</p>
+					<p class="number_e">51</p>
+				</div>
+				<div class="elem green">
+					<p class="weigth_e">127,6</p>
+					<p class="name_e">Te</p>
+					<p class="number_e">52</p>
+				</div>
+				<div class="elem purple">
+					<p class="weigth_e">126,9045</p>
+					<p class="name_e">I</p>
+					<p class="number_e">53</p>
+				</div>
+				<div class="elem blue_p">
+					<p class="weigth_e">131,293</p>
+					<p class="name_e">Xe</p>
+					<p class="number_e">54</p>
+				</div>
+			</div>
+
+			<div class="line">
+				<div class="elem blue">
+					<p class="weigth_e">132,9055</p>
+					<p class="name_e">Cs</p>
+					<p class="number_e">55</p>
+				</div>
+				<div class="elem pink">
+					<p class="weigth_e">137,327</p>
+					<p class="name_e">Ba</p>
+					<p class="number_e">56</p>
+				</div>
+				<div class="elem grey">
+					<p class="weigth_e">138,9055</p>
+					<p class="name_e">La</p>
+					<p class="number_e">57</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">178,49</p>
+					<p class="name_e">Hf</p>
+					<p class="number_e">72</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">180,9479</p>
+					<p class="name_e">Ta</p>
+					<p class="number_e">73</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">183,84</p>
+					<p class="name_e">W</p>
+					<p class="number_e">74</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">186,207</p>
+					<p class="name_e">Re</p>
+					<p class="number_e">75</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">190,23</p>
+					<p class="name_e">Os</p>
+					<p class="number_e">76</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">192,217</p>
+					<p class="name_e">Ir</p>
+					<p class="number_e">77</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">195,078</p>
+					<p class="name_e">Pt</p>
+					<p class="number_e">78</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">196,9665</p>
+					<p class="name_e">Au</p>
+					<p class="number_e">79</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">200,59</p>
+					<p class="name_e">Hg</p>
+					<p class="number_e">80</p>
+				</div>
+				<div class="elem orange">
+					<p class="weigth_e">204,3833</p>
+					<p class="name_e">Tl</p>
+					<p class="number_e">81</p>
+				</div>
+				<div class="elem orange">
+					<p class="weigth_e">207,2</p>
+					<p class="name_e">Pb</p>
+					<p class="number_e">82</p>
+				</div>
+				<div class="elem orange">
+					<p class="weigth_e">208,9804</p>
+					<p class="name_e">Bi</p>
+					<p class="number_e">83</p>
+				</div>
+				<div class="elem green">
+					<p class="weigth_e">209</p>
+					<p class="name_e">Po</p>
+					<p class="number_e">84</p>
+				</div>
+				<div class="elem purple">
+					<p class="weigth_e">210</p>
+					<p class="name_e">At</p>
+					<p class="number_e">85</p>
+				</div>
+				<div class="elem blue_p">
+					<p class="weigth_e">222</p>
+					<p class="name_e">Rn</p>
+					<p class="number_e">86</p>
+				</div>
+			</div>
+
+			<div class="line">
+				<div class="elem blue">
+					<p class="weigth_e">223</p>
+					<p class="name_e">Fr</p>
+					<p class="number_e">87</p>
+				</div>
+				<div class="elem pink">
+					<p class="weigth_e">226</p>
+					<p class="name_e">Ra</p>
+					<p class="number_e">88</p>
+				</div>
+				<div class="elem green_p">
+					<p class="weigth_e">227</p>
+					<p class="name_e">Ac</p>
+					<p class="number_e">89</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">261</p>
+					<p class="name_e">Rf</p>
+					<p class="number_e">104</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">262</p>
+					<p class="name_e">Db</p>
+					<p class="number_e">105</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">266</p>
+					<p class="name_e">Sg</p>
+					<p class="number_e">106</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">264</p>
+					<p class="name_e">Bh</p>
+					<p class="number_e">107</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">277</p>
+					<p class="name_e">Hs</p>
+					<p class="number_e">108</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">268</p>
+					<p class="name_e">Mt</p>
+					<p class="number_e">109</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">281</p>
+					<p class="name_e">Ds</p>
+					<p class="number_e">110</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">272</p>
+					<p class="name_e">Rg</p>
+					<p class="number_e">111</p>
+				</div>
+				<div class="elem red">
+					<p class="weigth_e">285</p>
+					<p class="name_e">Cn</p>
+					<p class="number_e">112</p>
+				</div>
+				<div class="elem orange">
+					<p class="weigth_e">284</p>
+					<p class="name_e">Uut</p>
+					<p class="number_e">113</p>
+				</div>
+				<div class="elem orange">
+					<p class="weigth_e">289</p>
+					<p class="name_e">Fl</p>
+					<p class="number_e">114</p>
+				</div>
+				<div class="elem orange">
+					<p class="weigth_e">288</p>
+					<p class="name_e">Uup</p>
+					<p class="number_e">115</p>
+				</div>
+				<div class="elem orange">
+					<p class="weigth_e">293</p>
+					<p class="name_e">Lv</p>
+					<p class="number_e">116</p>
+				</div>
+				<div class="elem purple">
+					<p class="weigth_e">294</p>
+					<p class="name_e">Uus</p>
+					<p class="number_e">117</p>
+				</div>
+				<div class="elem blue_p">
+					<p class="weigth_e">294</p>
+					<p class="name_e">Uuo</p>
+					<p class="number_e">118</p>
+				</div>
+			</div>
+
+			</br>
+
+			<div class="line">
+				<div></div>
+				<div></div>
+				<div class="elem grey">
+					<p class="weigth_e">140,116</p>
+					<p class="name_e">Ce</p>
+					<p class="number_e">58</p>
+				</div>
+				<div class="elem grey">
+					<p class="weigth_e">140,9077</p>
+					<p class="name_e">Pr</p>
+					<p class="number_e">59</p>
+				</div>
+				<div class="elem grey">
+					<p class="weigth_e">144,24</p>
+					<p class="name_e">Nd</p>
+					<p class="number_e">60</p>
+				</div>
+				<div class="elem grey">
+					<p class="weigth_e">145</p>
+					<p class="name_e">Pm</p>
+					<p class="number_e">61</p>
+				</div>
+				<div class="elem grey">
+					<p class="weigth_e">150,36</p>
+					<p class="name_e">Sm</p>
+					<p class="number_e">62</p>
+				</div>
+				<div class="elem grey">
+					<p class="weigth_e">151,964</p>
+					<p class="name_e">Eu</p>
+					<p class="number_e">63</p>
+				</div>
+				<div class="elem grey">
+					<p class="weigth_e">157,25</p>
+					<p class="name_e">Gd</p>
+					<p class="number_e">64</p>
+				</div>
+				<div class="elem grey">
+					<p class="weigth_e">158,9253</p>
+					<p class="name_e">Tb</p>
+					<p class="number_e">65</p>
+				</div>
+				<div class="elem grey">
+					<p class="weigth_e">162,5</p>
+					<p class="name_e">Dy</p>
+					<p class="number_e">66</p>
+				</div>
+				<div class="elem grey">
+					<p class="weigth_e">164,9303</p>
+					<p class="name_e">Ho</p>
+					<p class="number_e">67</p>
+				</div>
+				<div class="elem grey">
+					<p class="weigth_e">167,259</p>
+					<p class="name_e">Er</p>
+					<p class="number_e">68</p>
+				</div>
+				<div class="elem grey">
+					<p class="weigth_e">168,9342</p>
+					<p class="name_e">Tm</p>
+					<p class="number_e">69</p>
+				</div>
+				<div class="elem grey">
+					<p class="weigth_e">173,04</p>
+					<p class="name_e">Yb</p>
+					<p class="number_e">70</p>
+				</div>
+				<div class="elem grey">
+					<p class="weigth_e">174,967</p>
+					<p class="name_e">Lu</p>
+					<p class="number_e">71</p>
+				</div>
+			</div>
+
+			<div class="line">
+				<div></div>
+				<div></div>
+				<div class="elem green_p">
+					<p class="weigth_e">232,0381</p>
+					<p class="name_e">Th</p>
+					<p class="number_e">90</p>
+				</div>
+				<div class="elem green_p">
+					<p class="weigth_e">231,0359</p>
+					<p class="name_e">Pa</p>
+					<p class="number_e">91</p>
+				</div>
+				<div class="elem green_p">
+					<p class="weigth_e">238,0289</p>
+					<p class="name_e">U</p>
+					<p class="number_e">92</p>
+				</div>
+				<div class="elem green_p">
+					<p class="weigth_e">237</p>
+					<p class="name_e">Np</p>
+					<p class="number_e">93</p>
+				</div>
+				<div class="elem green_p">
+					<p class="weigth_e">244</p>
+					<p class="name_e">Pu</p>
+					<p class="number_e">94</p>
+				</div>
+				<div class="elem green_p">
+					<p class="weigth_e">243</p>
+					<p class="name_e">Am</p>
+					<p class="number_e">95</p>
+				</div>
+				<div class="elem green_p">
+					<p class="weigth_e">247</p>
+					<p class="name_e">Cm</p>
+					<p class="number_e">96</p>
+				</div>
+				<div class="elem green_p">
+					<p class="weigth_e">247.1</p>
+					<p class="name_e">Bk</p>
+					<p class="number_e">97</p>
+				</div>
+				<div class="elem green_p">
+					<p class="weigth_e">251</p>
+					<p class="name_e">Cf</p>
+					<p class="number_e">98</p>
+				</div>
+				<div class="elem green_p">
+					<p class="weigth_e">252</p>
+					<p class="name_e">Es</p>
+					<p class="number_e">99</p>
+				</div>
+				<div class="elem green_p">
+					<p class="weigth_e">257</p>
+					<p class="name_e">Fm</p>
+					<p class="number_e">100</p>
+				</div>
+				<div class="elem green_p">
+					<p class="weigth_e">258</p>
+					<p class="name_e">Md</p>
+					<p class="number_e">101</p>
+				</div>
+				<div class="elem green_p">
+					<p class="weigth_e">259</p>
+					<p class="name_e">No</p>
+					<p class="number_e">102</p>
+				</div>
+				<div class="elem green_p">
+					<p class="weigth_e">262</p>
+					<p class="name_e">Lr</p>
+					<p class="number_e">103</p>
+				</div>
+			</div>
+		</div>
+		</br></br></br>
+		<img src="https://p5.storage.canalblog.com/57/38/706909/123279402.jpg" class="picture">
+		</div>
+</body>
+
+</html>

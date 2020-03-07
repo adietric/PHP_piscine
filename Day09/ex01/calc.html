@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <input id="nb1" type="text" value="">
+    <select id="signe">
+		<option value="+">+</option>
+		<option value="-">-</option>
+		<option value="*">*</option>
+		<option value="/">/</option>
+		<option value="%">%</option>
+	</select>
+    <input id="nb2" type="text" value="">
+    <input type="submit" value="Try me!" onclick="do_your_job();">
+    <script>
+        function do_your_job() {
+            var nb1_ = parseInt(document.getElementById("nb1").value);
+            var signe_ = document.getElementById("signe").value;
+            var nb2_ = parseInt(document.getElementById("nb2").value);
+            var result;
+
+            if ((signe_ == '+' || signe_ == '-' || signe_ == '*' ||
+                    signe_ == '/' || signe_ == '%') && nb1_ >= 0 && nb2_ >= 0) {
+                if (nb2_ == 0 && (signe_ == '%' || signe_ == '/')) {
+                    alert('It\'s over 9000!');
+                    console.log('It\'s over 9000!');
+                } else {
+                    if (signe_ == '+')
+                        result = eval(nb1_ + nb2_);
+                    else if (signe_ == '-')
+                        result = eval(nb1_ - nb2_);
+                    else if (signe_ == '*')
+                        result = eval(nb1_ * nb2_);
+                    else if (signe_ == '/')
+                        result = eval(nb1_ / nb2_);
+                    else if (signe_ == '%')
+                        result = eval(nb1_ % nb2_);
+                    alert(result)
+                    console.log(result);
+                }
+            } else
+                alert('Error :(');
+        }
+        setInterval(function message() {
+            alert('Please, use me. . .');
+        }, 30000);
+    </script>
+</body>
+
+</html>
